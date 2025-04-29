@@ -11,6 +11,8 @@ function runQuestion() {
 
     if (isNaN(number)) {
         console.log("O que você digitou não é um número")
+    } else if (number % 1 != 0) {
+        console.log("É necessário que seja um número inteiro")
     } else if (number % 2 == 0) {
         console.log('Esse numero é par')
     } else {

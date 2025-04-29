@@ -4,7 +4,7 @@ import utils from "./utils.mjs";
 const prompt = PromptSync()
 
 function descricao() {
-    return "10 números da sequência de Fibonacci"
+    return "10 primeiros números da sequência de Fibonacci"
 }
 
 function runQuestion() {

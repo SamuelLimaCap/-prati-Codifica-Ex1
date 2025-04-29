@@ -19,9 +19,22 @@ function runQuestion() {
         console.log("Peso ou altura inexistente")
         return
     }
-    let imc = peso / altura * altura;
+    let imc = peso / (altura * altura);
 
     console.log(`IMC: ${imc} kg/m²`)
+
+    let classificaçãoTexto = ""
+    if (imc < 18.5) {
+        classificaçãoTexto = "Abaixo do peso"
+    } else if (imc >= 18.5 && imc < 25) {
+        classificaçãoTexto = "Peso normal"
+    } else if (imc >= 25 && imc < 30) {
+        classificaçãoTexto = "Sobrepeso"
+    } else if (imc >= 30) {
+        classificaçãoTexto = "Obesidade"
+    }
+
+    console.log(`Classificação: ${classificaçãoTexto}`)
 }
 
 export default {

@@ -9,7 +9,7 @@ function descricao() {
 
 function runQuestion() {
     let number = Number(prompt("Digite um número de 1 a 10, que mostraremos a tabuada desse número: "))
-    if (number > 10 || number < 1 || isNaN(number)) {
+    if (number > 10 || number < 1 || isNaN(number) || (number%1!=0)) {
         console.log("Não temos essa tabuada")
         return
     }

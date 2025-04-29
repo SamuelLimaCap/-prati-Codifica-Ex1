@@ -16,8 +16,9 @@ function runQuestion() {
 
     const number = Number(prompt("Opção:"))
 
-    if (isNaN(number) || number < 1 || number > 3) {
+    if (isNaN(number) || number < 1 || number > 3 || (number%1 != 0)) {
         console.log("Opção Inválida")
+        return
     }
     switch (number) {
         case 1:
