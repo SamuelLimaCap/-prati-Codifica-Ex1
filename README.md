@@ -42,7 +42,7 @@ Para executar no VSCode, é preciso fazer um das seguintes opções:
 #### Utilizar o terminal do VSCODE
 
 Abra o terminal do VSCODE no diretório destes arquivos e execute o comando
-```
+```console
 node index.mjs
 ```
 
