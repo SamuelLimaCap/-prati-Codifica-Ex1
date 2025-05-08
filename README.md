@@ -1,5 +1,7 @@
 # -prati-Codifica-Ex1
 
+![Imagem da seleção de exercícios](https://github.com/user-attachments/assets/7fb4b5b0-a6a0-4c13-8d86-1b4029a35413)
+
 Exercícios obrigatórios da tarefa 1 do curso prati+ Desenvolvimento Web
 
 ## Sumário
