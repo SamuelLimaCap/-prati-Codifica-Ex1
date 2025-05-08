@@ -3,7 +3,8 @@ function msleep(n) {
 }
 
 const utils = {
-    msleep: msleep
-}
+  msleep: msleep,
+};
 
-export default utils
+export default utils;
+

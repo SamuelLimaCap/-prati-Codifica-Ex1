@@ -1,48 +1,49 @@
 import PromptSync from "prompt-sync";
 
-const prompt = PromptSync()
+const prompt = PromptSync();
 
 function descricao() {
-    return "Somatória de números"
+  return "Somatória de números";
 }
 
 function runQuestion() {
-    let listaNums = []
+  let listaNums = [];
 
-    console.log("Iremos somar todos os números até você digitar o número 0")
+  console.log("Iremos somar todos os números até você digitar o número 0");
 
-    let shouldContinue = true;
-    let i = 0;
-    while (shouldContinue) {
-        let itsANumber = true;
+  let shouldContinue = true;
+  let i = 0;
+  while (shouldContinue) {
+    let itsANumber = true;
 
-        do {
-            let number = Number(prompt(`Digite o ${i+1} númeroº: `));
-            if (isNaN(number)) {
-                console.log("O que você digitou não pode ser considerado um número")
-                itsANumber = false;
-                continue;
-            } 
+    do {
+      let number = Number(prompt(`Digite o ${i + 1} númeroº: `));
+      if (isNaN(number)) {
+        console.log("O que você digitou não pode ser considerado um número");
+        itsANumber = false;
+        continue;
+      }
 
-            itsANumber = true;
-            listaNums[i] = number;
-            i++;
-            if (number == 0) {
-                shouldContinue = false;
-            }
-        } while (!itsANumber )
-    }
+      itsANumber = true;
+      listaNums[i] = number;
+      i++;
+      if (number == 0) {
+        shouldContinue = false;
+      }
+    } while (!itsANumber);
+  }
 
-    let total = 0;
-    for(let num of listaNums) {
-       total += num; 
-    }
+  let total = 0;
+  for (let num of listaNums) {
+    total += num;
+  }
 
-    console.log("---")
-    console.log(`Total: ${total}`)
+  console.log("---");
+  console.log(`Total: ${total}`);
 }
 
 export default {
-    descricao: descricao,
-    questao: runQuestion
-}
+  descricao: descricao,
+  questao: runQuestion,
+};
+
