@@ -32,7 +32,7 @@ node index.mjs
 
 ### <a name="inst-uso-op2"> Opção 2 - Executando no VSCode
 
-Como está sendo usando o formato JS com suporte pra módulos, o terminal de DEBUG do VSCode não consegue executa-lo.
+Como está sendo usado o formato JS com suporte pra módulos, o terminal de DEBUG do VSCode não consegue executa-lo.
 
 Para executar no VSCode, há 2 opções:
 
@@ -61,4 +61,3 @@ Vá em "File -> Preferences -> User tasks" e adiciona uma nova task com esses va
 ```
 
 Após isso, salve o arquivo. Certifique-se que o VSCODE está aberto na pasta deste diretório, vá em "Terminal -> Run task" e selecione a task chamada "Executar index.mjs"
-
